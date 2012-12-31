@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="/static/main.css" />
+
+  <title>CS 253 Blog</title>
+</head>
+
+<body>
+  <a href="/blog" class="main-title">
+    CS 253 Blog
+  </a>
+
+  <div id="content">
+      <h2>login</h2>
+
+      <form method="post">
+          <label>username
+              <input type="text" name="username" value="{{ username }}">
+          </label>
+
+          <label>password
+          <input type="text" name="password" value="{{ password }}">
+          </label>
+
+          <div class="error">{{ error }}</div>
+
+          <br>
+          <input type="submit">
+
+      </form>
+  
+
+  </div>
+</body>
+
+</html>
